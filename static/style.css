@@ -1,0 +1,460 @@
+/* Root colors */
+:root {
+    --primary-color: #2C4F6F; /* Biru tua */
+    --secondary-color: #ffffff; /* Putih */
+    --text-color: #ffffff; /* Teks putih */
+    --border-color: rgba(255, 255, 255, 0.5); /* Warna garis */
+    --background-gradient: linear-gradient(to top, #6e83a7, #062670); /* Gradasi */
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full Page Background */
+body {
+    background: var(--background-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--text-color);
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar.user-info {
+  text-transform: capitalize
+}
+
+.nav-links li {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Main Content */
+.menu {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.menu h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.button {
+    padding-bottom: 0px;
+}
+.menu p {
+    font-size: 18px;
+    margin-bottom: 70px;
+}
+
+.menu input[type="submit"] {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+}
+
+.menu input[type="password"]::placeholder {
+    color: rgba(203, 201, 201, 0.6);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    gap: 200px;
+    justify-content: space-around;
+    padding: 10px 20px;
+    border-top: 1px solid var(--border-color);
+    font-size: 14px;
+    color:#fff
+}
+
+/* Main Content */
+.welcome {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.welcome h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.welcome input[type="password"] {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+}
+
+
+
+.welcome input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Form container */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    margin-top: 20px;
+}
+
+/* Label */
+form label {
+    font-size: 18px;
+    color: var(--text-color, #ffffff);
+    margin-bottom: 10px;
+}
+
+/* Input field */
+form input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    width: 200px;
+    text-align: center;
+}
+
+/* Error messages */
+form .error-messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #ff6b6b; /* Warna merah untuk pesan error */
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Button */
+form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: var(--primary-color, #1e3a8a);
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: var(--secondary-color, #1d4ed8);
+}
+
+/*cek saldo*/
+.saldo {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .saldo h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding-top: 100px;
+  }
+  
+  .bungkus {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .bungkus p {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 200px;
+    margin:  auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .container a{
+    color: #ffffff;
+  }
+
+  /*TARIK TUNAI*/ 
+  .tariktunai {
+    background-color: rgba(255, 255, 255, 0.217);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .tariktunai h1 {
+    margin-bottom: 20px;
+  }
+  
+  .tariktunai label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .tariktunai input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .tariktunai button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tariktunai button:hover {
+    background-color: #0056b3;
+  }
+  
+  .tariktunai ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    color: #dc3545;
+  }
+  
+  .tariktunai ul li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  form {
+    gap: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Latar belakang form sedikit buram */
+    border-radius: 10px;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000; /* Warna merah */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    color: red;
+  }
+  
+  .transfer {
+    background-color: rgba(255, 255, 255, 0.217);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .transfer h1 {
+    margin-bottom: 20px;
+  }
+  
+  .transfer label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .transfer input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .transfer button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .transfer button:hover {
+    background-color: #0056b3;
+  }
+  
+  .transfer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    color: #dc3545;
+  }
+  
+  .transfer ul li {
+    margin-bottom: 5px;
+  }
+
+  /*MENU KELUAR*/
+  
+  .exit {
+    padding: 10px 30px;
+    font-size: 14px;
+    background-color: #007bff; /* Warna biru */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: background-color 0.3s ease;
+  }
+
+.exit:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
+
+a.button {
+  margin-top: 0px;
+}
+
+/*CEK SALDO*/
+.ceksaldo {
+  padding: 10px 30px;
+  font-size: 14px;
+  background-color: #007bff; /* Warna biru */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; /* Menghilangkan garis bawah */
+  transition: background-color 0.3s ease;
+}
+
+.exit:hover {
+  background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
+
+a.button {
+margin-top: 0px;
+}
+
+/*SIDEBAR*/
